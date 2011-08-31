@@ -2,7 +2,7 @@
   "author": "Jerry Sievert <code@legitimatesounding.com> (http://legitimatesounding.com/blog/)",
   "name": "mock-request-response",
   "description": "Mock request and response objects for node.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "http://github.com/JerrySievert/mock-request-response.git"

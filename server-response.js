@@ -1,6 +1,8 @@
 (function () {
     function Response (setup) {
         setup = setup || { };
+        setup.headers = setup.headers || { };
+
         this._internals = setup;
         this.socket = {
             encrypted: setup.encrypted || false

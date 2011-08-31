@@ -16,6 +16,15 @@ vows.describe('Server Response').addBatch({
             'that the data is correct': function (topic) {
                 assert.equal(topic.get('buffer'), 'foo');
             }
+        },
+        'and a header is set': {
+            topic: function (topic) {
+                topic.setHeader('foo', 'bar');
+                return topic;
+            },
+            'that the header is set correctly': function (topic) {
+                assert.equal(topic.getHeader('foo'), 'bar');
+            }
         }
     }
 }).export(module);
